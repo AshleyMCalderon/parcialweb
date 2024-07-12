@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de datos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<script>
+    /*nombre d ela ficha*/
+    document.addEventListener("DOMContentLoaded", function() {
+    // Obtener el nombre introducido en el formulario desde el almacenamiento local
+    var nombre = localStorage.getItem("nombre");
+    
+    // Actualizar el título de la ficha con el nombre y la palabra "Ficha" en una nueva línea
+    var tituloFicha = document.getElementById("tituloFicha");
+    tituloFicha.innerHTML = nombre.toUpperCase() + "<br>Ficha";
+
+});
+
+</script>
+
+</head>
+<body>
+    <div class="ficha">
+        <div id="tituloContainer" class="titulo-container"></h2>
+            <i class="bx bx-smile"></i>
+            <h2 id="tituloFicha"></h2>
+        </div>
+    
+        <div id="cuerpoContainer" class="cuerpo-container"></h2>
+            <div class="datos">
+                <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+            
+                <h4>Gustos</h4>
+                <table id="tablaDatos">
+                    <!-- Aquí se insertarán los datos de la tabla dinámicamente -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Parcial</title> 
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Formulario de afiliacion</h2>
+                    <!-- Formulario -->
+                    <form id="formulario">
+                        <div class="inputbox">
+                            <ion-icon name="person"></ion-icon>
+                            <input type="username" id="nombre" name="nombre">
+                            <label for="">Nombre completo</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail"></ion-icon>
+                            <input type="email" id="email" name="email">
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="call"></ion-icon>
+                            <input type="tel" id="telefono" name="telefono">
+                            <label for="">Telefono</label>
+                        </div>
+                        <label for="gusto"></label>
+                        <div class="inputbox">
+                          <input type="text" id="gusto" name="gusto">
+                          <button type="button" id="boton-gustos" onclick="agregarFila()">Gustos</button>
+                        </div>
+                        <label for="porcentaje">Porcentaje:</label>
+                        <input type="text" id="porcentaje" name="porcentaje">
+                    </form>
+
+                    <!-- Contenedor -->
+                    <div class="container">
+                        <!-- Contenedor del Icono -->
+                        <div class="icon-box">
+                            <ion-icon name="golf-outline"></ion-icon>
+                        </div>
+
+                        <table id="tabla">
+                            <thead>
+                                <tr>
+                                    <th>Gusto</th>
+                                    <th>%</th>
+                                    <th>Editar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!-- Las filas se llenarÃ¡n dinÃ¡micamente con JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+               
+               
+            <!--botones guardar o resetear-->
+            <div id="mensaje" style="display: none;">Pulse ACEPTAR para guardar los cambios, de lo contrario pulse CANCELAR</div>
+            <input type="submit" value="ACEPTAR" class="boton-edicion" onclick="guardarCambios()">
+            <input type="button" value="CANCELAR" class="boton-edicion" onclick="borrarDatos()">
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

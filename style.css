@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100.. 1000&display=intercambiar');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100.. 1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:100|Open+Sans:300|Lato:100|Montserrat:100|Raleway:100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:100&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+section  /*formato para el fondo del formulario*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #edeeed;
+}
+
+.form-box  /*formato para el recuadro del formulario*/
+{
+    position: relative;
+    width: auto;
+    height: auto;
+    
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 /*formato para el texto h2*/
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: rgb(99, 99, 99);
+    text-align: center;
+}
+
+.bold 
+{
+    font-weight: bold; /* Aplicar negrita a la palabra "Web" */
+}
+
+h5  /*formato para el texto h5*/
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 100%;
+    color: rgb(110, 110, 110);
+    text-align: center;
+}
+
+.inputbox   /*formato para cuadro de texto*/
+{
+    position: relative;
+    margin: 30px;
+    width: 350px;
+    border: 2px solid #dbdbdb;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que el botÃ³n sobresalga de la caja de entrada */
+}
+
+
+.formField   /*formato para cuadro de texto*/
+{
+    position: relative;
+    margin: 30px;
+    width: 350px;
+    border: 2px solid #dbdbdb;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que el botÃ³n sobresalga de la caja de entrada */
+}
+
+.inputbox label  /*formato para el texto que se ve dentro del cuadro antes de ser llenado*/
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #bdbdbd;
+    font-size: 1em;
+    pointer-events: none;
+    transition: -5s;
+}
+
+/*formato correr el texto del cuadro para que no interfiera en el llenado*/
+input:focus ~ label,
+input:valid ~ label
+{
+top: -10px;
+}
+
+.inputbox input
+{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: rgb(0, 17, 255);
+    
+}
+
+.inputbox input[type="text"] {
+    width: calc(100% - 80px); /* El ancho del input es el 100% menos el ancho del botÃ³n mÃ¡s el espacio entre ellos */
+    border: none; /* Elimina el borde del input */
+    padding: 10px; /* Ajusta el relleno segÃºn sea necesario */
+    float: left; /* Coloca el input a la izquierda */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+.inputbox button {
+    font-family: 'Lato', sans-serif;
+    width: 80px; /* Ancho del botÃ³n */
+    height: 50px;
+    border: 2px solid #00ccff; /* Elimina el borde del botÃ³n */
+    background: transparent; /* Color de fondo del botÃ³n */
+    color: #00e1ff; /* Color del texto del botÃ³n */
+    border-radius: 0 8px 8px 0; /* Redondea solo la esquina derecha del botÃ³n */
+    float: left; /* Coloca el botÃ³n a la derecha */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+.inputbox ion-icon
+{
+    position: absolute;
+    right: 8px;
+    color: aqua;
+    font-size: 1.5em;
+    top: 15px;
+}
+.forget
+{
+    margin: -15 0 15;
+    font-size: .9em;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label
+{
+   margin: 3px; 
+}
+
+.forget label a 
+{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.forget label a :hover
+{
+    text-decoration: underline;
+}
+
+/*button
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #f90000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    
+}*/
+
+.register
+{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+
+.register p a
+{
+    text-decoration: none; 
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover
+{
+    text-decoration: underline;
+}
+
+
+/*STYLE PARA LA TABLA EDITABLE*/
+ /* Ocultar el label para el campo de porcentaje */
+ label[for="porcentaje"] 
+ {
+    display: none;
+}
+
+#porcentaje {
+    display: none;
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+    margin-top: 20px;
+    width: 80%; /* Ancho fijo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    background-color: #a7feff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+    padding: 20px;
+    display: flex; /* Establecer como contenedor flexible */
+    align-items: center; /* Alinear elementos verticalmente */
+}
+
+/* Estilos para el contenedor del icono */
+.icon-box {
+    margin-right: 20px; /* Espacio entre el icono y la tabla */
+}
+
+.icon-box ion-icon {
+    font-size: 3em; /* Tamaño del icono */
+    color: #ffffff;
+}
+
+
+.inputbox input.editable {
+    display: block; /* Mostrar el campo de texto */
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsar bordes de celda */
+    border: 1px solid rgb(175, 175, 175); /* Agregar borde negro a la tabla */
+}
+
+th, td {
+    width: 80px;
+    padding: 10px; /* Añadir relleno a las celdas */
+    text-align: center; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid rgb(175, 175, 175); /* Agregar borde inferior negro a las filas */
+    border-right: 1px solid rgb(175, 175, 175); /* Agregar línea a la derecha de cada celda */
+}
+
+th {
+    background-color: #f9f9f9; /* Color de fondo gris para las celdas del encabezado */
+    text-align: center;
+}
+
+#tabla th:last-child,
+#tabla td:last-child {
+    width: 100px; /* Ancho fijo para las celdas de edición */
+    max-width: 100px; /* Establecer un ancho máximo para las celdas de edición */
+    white-space: nowrap; /* Evitar el salto de línea dentro de las celdas de edición */
+    overflow: hidden; /* Ocultar cualquier contenido que exceda el ancho máximo */
+}
+
+button
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: transparent;
+    color: blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    
+}
+
+/* Estilos para el botón de guardar */
+.boton-edicion {
+    font-size: 0.8em;
+    width: auto;
+    height: auto;
+    background-color: rgb(205, 205, 205);
+    color: rgb(78, 78, 78);
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.boton-edicion {
+    display: none;
+}
+

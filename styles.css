@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Color de fondo de la página */
+}
+
+.ficha {
+    width: 50%; /* Ancho del cuadro */
+    max-width: 600px; /* Ancho máximo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #fff; /* Color de fondo */
+}
+
+
+
+
+.titulo-container {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    background-color: #ae00ff;
+    padding: 5px;
+    margin: 0 auto;
+    border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+    border-bottom-left-radius: 0; /* Bordes rectos en la esquina inferior izquierda */
+    border-bottom-right-radius: 0; /* Bordes rectos en la esquina inferior derecha */
+
+}
+
+.cuerpo-container {
+    display: flex;
+    height: auto;
+    width: 300px;
+    align-items: center;
+    background-color: #d57cfe;
+    padding: 5px;
+    margin: 0 auto;
+
+}
+
+.titulo-container i,
+.cuerpo-container i {
+    margin-right: 10px; /* Espacio entre el icono y el título */
+    font-size: 6em; /* Tamaño del ícono */
+}
